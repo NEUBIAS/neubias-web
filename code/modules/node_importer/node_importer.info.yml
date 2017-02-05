@@ -1,0 +1,7 @@
+name: Node Importer
+type: module
+description: Imports nodes from JSON and OWL file.
+version: 0.94
+package: Custom
+core: 8.x
+hidden: false
