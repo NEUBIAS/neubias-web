@@ -24,3 +24,13 @@ if (file_exists($local_settings)) {
   include $local_settings;
 }
 $settings['install_profile'] = 'standard';
+
+/**
+* correcting trusted pattern dor security concerns (Perrine 03/02/2017)
+**/
+$settings['trusted_host_patterns'] = array(
+ '^live-bise2\.pantheonsite\.io$',
+'^dev-bise2\.pantheonsite\.io$',
+'^test-bise2\.pantheonsite\.io$',
+
+);
